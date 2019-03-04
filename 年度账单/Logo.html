@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="LogoPage">
+    <div class="logo">
+        <img src="images/school.png" alt="">
+    </div>
+    <div class="theme">
+        <h3 class="user_name">牛顿莱布尼茨</h3>
+        <h5 >您的年度捐赠主题是</h5>
+        <h2>奉献与爱心</h2>
+    </div>
+    <a href="javascript:;" class="share">分享我的2018</a>
+    <div class="bill_box">
+        <div class="share_msg">
+            <img src="images/arrow.png" alt="">
+            <h4>点击此处分享链接哟！</h4>
+        </div>
+        <div class="bill_out">
+            <div class="bill">
+                <img src="images/5.png" alt="">
+            </div>
+            <div class="close">
+                <img src="images/close.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/rem/rem.js"></script>
+<script src="js/jquery/jquery-3.3.1.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/snowfall.js"></script>
+<script>
+    function init()
+    {
+        var img_url = [];
+        for(var i=1;i<=5;i++){
+            var s_url = 'images/leaf' + i + '.png';
+            img_url.push(s_url);
+        }
+
+        $(".LogoPage").snowfall({
+            image: img_url, //img_url 图片地址数组
+            flakeCount:6,
+            minSize: 20,
+            maxSize: 30,
+            maxSpeed : 3,
+        });
+    }
+    init();//初始
+</script>
+<script>
+    $(document).ready(function () {
+        $('.share').on('click', function () {
+            $('.bill_box').css('display', 'block');
+            $('.close').on('click', function () {
+                $('.bill_box').css('display', 'none');
+            })
+        })
+    })
+</script>
+</body>
+</html>

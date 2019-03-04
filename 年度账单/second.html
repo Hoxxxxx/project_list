@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>user</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<div class="user">
+    <div class="user_msg">
+        <div class="user_info">
+            <img src="images/5.png" alt="">
+            <span class="user_name">叶修不是秋</span>
+        </div>
+        <div class="user_content">
+            <p class="text_top hide">
+                时间总是偷偷流逝
+                <br>
+                在过去的一年里
+                <br>
+                你帮助母校做了哪些事情？
+                <br>
+                汇聚爱心
+                <br>
+                微力改变世界
+            </p>
+            <p class="text_bottom hide">
+                亲爱的校友
+                <br>
+                神州智联大学2018新年爱心账单
+            </p>
+        </div>
+        <h3 class="title_dona hide">为爱首发</h3>
+    </div>
+    <div class="slide_out">
+        <div class="slideUp"></div>
+    </div>
+</div>
+<script src="js/rem/rem.js"></script>
+<script src="js/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/snowfall.js"></script>
+<script>
+    function init()
+    {
+        var img_url = [];
+        for(var i=1;i<=5;i++){
+            var s_url = 'images/leaf' + i + '.png';
+            img_url.push(s_url);
+        }
+        $(".user").snowfall({
+            image: img_url, //img_url 图片地址数组
+            flakeCount:6,
+            minSize: 20,
+            maxSize: 30,
+            maxSpeed : 3,
+        });
+    }
+    init();//初始
+
+</script>
+<script>
+    $(document).ready(function () {
+
+        var timer = setTimeout(function () {
+            $('.text_top').removeClass('hide')
+            $('.text_top').addClass('animated zoomInRight');
+            setTimeout(function () {
+                $('.text_bottom').removeClass('hide')
+                $('.text_bottom').addClass('animated zoomInLeft');
+                setTimeout(function () {
+                    $('.title_dona').removeClass('hide')
+                    $('.title_dona').addClass('animated rubberBand')
+                },1200)
+            },1000)
+        }, 700)
+
+
+        $('.slide_out').on('click',function () {
+            var timer=setTimeout(function () {
+                window.location.href = "donation_less.html";
+            },800)
+        })
+
+        $('.slide_out').on("touchstart", function(e) {
+            e.stopPropagation();
+            startX = e.originalEvent.changedTouches[0].pageX,
+                startY = e.originalEvent.changedTouches[0].pageY;
+            //手指按下的时候
+        });
+        $('.slide_out').on("touchmove", function(e) {
+            e.stopPropagation();
+            moveEndX = e.originalEvent.changedTouches[0].pageX,
+                moveEndY = e.originalEvent.changedTouches[0].pageY,
+                X = moveEndX - startX,
+                Y = moveEndY - startY;
+
+            if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
+                // console.log("left 2 right");
+            }
+            else if ( Math.abs(X) > Math.abs(Y) && X < 0 ) {
+                // console.log("right 2 left");
+
+            }
+            else if ( Math.abs(Y) > Math.abs(X) && Y > 0) {
+                // console.log("top 2 bottom");
+            }
+            else if ( Math.abs(Y) > Math.abs(X) && Y < 0 ) {
+                // console.log("bottom 2 top");
+                var timer=setTimeout(function () {
+                    window.location.href = "donation_less.html";
+                },800)
+            }
+            else{
+                // console.log("just touch");
+            }
+        });
+    })
+</script>
+</body>
+</html>
