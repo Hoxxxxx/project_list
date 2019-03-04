@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.fz30{
+    font-size: 0.3rem;
+}
+.fz40{
+    font-size: 0.4rem;
+}
+.fz30{
+    font-size: 0.34rem;
+}
+.fz34{
+    font-size: 0.34rem;
+}
+.fz38{
+    font-size: 0.38rem;
+}
+.fz46{
+    font-size: 0.46rem;
+}
+.ml40{
+    margin-left: 0.4rem;
+}
+.ml80{
+    margin-left: 0.8rem;
+}
+.ml120{
+    margin-left: 1.2rem;
+}
+
+.mt10{
+    margin-top: 0.1rem;
+}
+.mt20{
+    margin-top: 0.2rem;
+}
+.mt30{
+    margin-top: 0.3rem;
+}
+.head{
+    width: 6.9rem;
+    height: 1.3rem;
+    padding: 0 0.3rem;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.head a{
+    color: #ffffff;
+}
+.greatThan{
+    vertical-align: center;
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-width: 0.06rem;
+    border-style: solid;
+    border-color: transparent transparent #ffffff #ffffff;
+    transform: rotate(45deg);
+
+}
+.dot{
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+/*主页面*/
+.content{
+    width: 7.5rem;
+    height: 13.5rem;
+    background: url("../images/imgs/bg1.jpg");
+    background-size: 7.5rem;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+.cont-title img{
+    width: 7.5rem;
+    margin-top: 0.5rem;
+}
+.cont-bag img{
+    width: 7.5rem;
+}
+.cont-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-img{
+    width: 2.1rem;
+    height: 0.8rem;
+}
+.cont-btn img:last-child{
+    margin-top: 0.3rem;
+    width: 2.5rem;
+}
+
+
+/*二维码页面*/
+.Qr-code{
+    width: 6.5rem;
+    height: 5rem;
+    margin: 3rem 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Qr-code img:first-child{
+    width: 3rem;
+}
+.Qr-code img:last-child{
+    width: 5rem;
+}
+.cont-bottom{
+    width: 2.5rem;
+    margin: 2rem 0 0 2.5rem;
+}
+.cont-bottom img{
+    width: 2.5em;
+}
+
+
+/*寻找福袋页面*/
+.cont{
+    position: relative;
+    width: 7.5rem;
+    height: auto;
+    min-height: 12rem;
+    background-image: url("../images/1送福袋首页/闪光.png"),url("../images/imgs/bg2.jpg");
+    background-size: 7.5rem;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+.search-title{
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.search-title img:first-child{
+    width: 5.4rem;
+    height: 2.1rem;
+    position: relative;
+    z-index: 999;
+}
+.gif-title{
+    position: absolute;
+    right: 0;
+    width: 3.5rem;
+}
+.cont-imgs{
+    width: 7.4rem;
+    margin-left: 0.05rem;
+    height: auto;
+}
+
+.img-w{
+    width: 6rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-left: 0.75rem;
+    margin-top: -0.6rem;
+}
+
+.img-item{
+    position: relative;
+    text-align: center;
+}
+.img-main{
+    width: 7.4rem;
+}
+.img-text{
+    width: 6.27rem;
+    display: none;
+}
+.cont-btns{
+    width: 6rem;
+    height: 1rem;
+    margin-left: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont-btns img{
+    height: 1rem;
+}
+.img-odd{
+    position: absolute;
+    width: 1.7rem;
+    top: -0.5rem;
+    left: 0;
+}
+.img-even{
+    position: absolute;
+    width: 1.7rem;
+    top: -0.5rem;
+    left: 5.9rem;
+}
+.bag-fixed{
+    position: absolute;
+    z-index: 999;
+    width: 0.8rem;
+    left: 5.9rem;
+    top: 2.5rem;
+}
+.shake{
+    animation: shake 0.25s linear alternate 5 ;
+}
+@keyframes shake {
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(-45deg);
+    }
+}
+
+/* audio */
+.audio{
+    position: relative;
+    /*right: 0.5rem;*/
+}
+.audio img{
+    width: 0.6rem;
+}
+#music-img{
+    position: fixed;
+    left: 6.5rem;
+    top: 0.5rem;
+    z-index: 999;
+}
+/*音乐图标旋转*/
+.rotate{
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}

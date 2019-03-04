@@ -1,0 +1,123 @@
+.cover{
+  height: 13.34rem;
+  width: 7.5rem;
+  background:#be1b12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  background: url("images/bgg.jpg");
+  background-size: 100% 100%;
+  .msg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2.5rem;
+    margin-top: -1.5rem;
+    color: #ee312c;
+    background: #fde6da;
+    font-size: .38rem;
+    height: 3rem;
+    width: 5rem;
+    text-align: center;
+    line-height: 3rem;
+    animation: move 2s ;
+    border-radius: .3rem;
+  }
+  @keyframes move {
+    from{
+      transform:rotateX(0deg);
+    }
+    33%{
+      transform:rotateX(180deg);
+    }
+    66%{
+      transform:rotateX(0deg);
+    }
+    100%{
+      transform:rotateX(0deg);
+    }
+  }
+}
+.picture{
+  height: 13.34rem;
+  width: 7.5rem;
+  //background-image: url("../../img/bigSave.jpg");
+  //background-size: 100% 100% ;
+  //background-position: center center;
+  overflow: hidden;
+  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 13.34rem;
+    width: 7.5rem;
+    z-index: 1;
+  }
+  .wish{
+    margin: 6.49rem .75rem 0;
+    width:6rem;
+    height:3.42rem;
+    border-radius:.4rem;
+    padding: 0 .8rem .95rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 22;
+    .wishWord {
+      height: 1.06rem;
+      width: 100%;
+      position: relative;
+      font-size: .3rem;
+      line-height: .52rem;
+      color: rgba(218, 40, 30, 1);
+      font-weight: 800;
+      text-shadow: .01rem .01rem rgba(0,0,0,0.1);
+    }
+    .wishSelf{
+      margin-top: .26rem;
+      width: 100%;
+      height: 1.14rem;
+      box-sizing: border-box;
+      padding:.1rem .3rem;
+      font-size:.28rem;
+      color:rgba(238,49,44,1);
+      line-height:.48rem;
+      font-weight: 600;
+    }
+  }
+  .ewms{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 1.3rem;
+    margin-left: 4.69rem;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 22;
+    .ewm{
+      width: 1.06rem;
+      height: 1.06rem;
+      margin: .07rem;
+      canvas{
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+body>a{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 13.34rem;
+  width: 7.5rem;
+  z-index: 55555;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

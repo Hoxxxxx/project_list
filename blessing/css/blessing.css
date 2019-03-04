@@ -1,0 +1,149 @@
+.Popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.Popup .popupBg {
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.Popup .PopupCenter {
+  width: 6rem;
+  height: 10.64rem;
+  position: absolute;
+  top: 3.5%;
+  left: 50%;
+  margin-left: -3rem;
+  z-index: 33;
+}
+.Popup .PopupCenter .blessImg {
+  width: 100%;
+  height: 7.8rem;
+  background-image: url("../images/wishCard.png");
+  background-size: 100% 100%;
+  background-position: center center;
+  position: relative;
+}
+.Popup .PopupCenter .blessImg .close {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../images/closeBtn.png");
+  background-size: 100% 100% ;
+  background-position: center center;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.38rem;
+}
+.Popup .PopupCenter .blessImg .wish {
+  width: 100%;
+  height: 3.42rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.7rem 0.95rem;
+  box-sizing: border-box;
+}
+.Popup .PopupCenter .blessImg .wish .wishWord {
+  height: 1.06rem;
+  width: 100%;
+  position: relative;
+  font-size: 0.3rem;
+  line-height: 0.52rem;
+  color: #da281e;
+  font-weight: 800;
+  text-shadow: 0.01rem 0.01rem rgba(0, 0, 0, 0.24);
+}
+.Popup .PopupCenter .blessImg .wish .wishWord:before {
+  position: absolute;
+  bottom: 0.56rem;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 0.02rem;
+  background: #da281e;
+  opacity: 0.5;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+}
+.Popup .PopupCenter .blessImg .wish .wishWord:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 0.02rem;
+  background: #da281e;
+  opacity: 0.5;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+}
+.Popup .PopupCenter .blessImg .wish .wishSelf {
+  margin-top: 0.26rem;
+  width: 100%;
+  height: 1.14rem;
+  border: 0.02rem dashed rgba(238, 49, 44, 0.5);
+  box-shadow: 0.07rem 0.07rem 0.22rem 0.02rem rgba(0, 0, 0, 0.14);
+  border-radius: 0.1rem;
+  box-sizing: border-box;
+}
+.Popup .PopupCenter .blessImg .wish .wishSelf textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  margin: 0;
+  resize: none;
+  box-sizing: border-box;
+  padding: 0.16rem 0.2rem;
+  font-size: 0.28em;
+  font-weight: 600;
+  color: #ee312c;
+  line-height: 0.38rem;
+  outline: none;
+}
+.Popup .PopupCenter .blessImg .wish .wishSelf textarea::-webkit-input-placeholder {
+  color: rgba(238, 49, 44, 0.7);
+}
+.Popup .PopupCenter .wishSelfWord {
+  overflow: hidden;
+}
+.Popup .PopupCenter .wishSelfWord div {
+  width: 1.7rem;
+  height: 0.6rem;
+  background: #fde6da;
+  box-shadow: 0.07rem 0.07rem 0.22rem 0.02rem rgba(0, 0, 0, 0.14);
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  color: #ee312c;
+  line-height: 0.6rem;
+  text-align: center;
+  float: left;
+  margin-left: 0.45rem;
+  margin-top: 4%;
+  font-weight: 800;
+}
+.Popup .PopupCenter .wishSelfWord div:nth-child(1),
+.Popup .PopupCenter .wishSelfWord div:nth-child(4) {
+  margin-left: 0;
+}
+.Popup .PopupCenter .wishSelfWord div:nth-child(3) {
+  font-size: 0.24rem;
+}
+.Popup .PopupCenter .Save {
+  margin: 0.39rem auto 0;
+  width: 2.67rem;
+  height: 0.69rem;
+  border-radius: 0.1rem;
+  background-image: url("../images/wishsave.png");
+  background-size: 100% 100%;
+  background-position: center center;
+}
+/*# sourceMappingURL=blessing.css.map */

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>长按保存图片</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/preservation.css">
+    <script src="js/lib/rem/rem.js"></script>
+</head>
+<body>
+<div class="cover">
+    <div class="msg">福卡生成中,请长按保存</div>
+</div>
+<div class="picture">
+    <img src="images/bigsave.jpg" alt="">
+    <div class="wish">
+        <div class="wishWord">
+            新年愿望 新年愿望 新年愿望 新年愿望 新年愿望 早睡早起
+        </div>
+        <div class="wishSelf">
+            新年愿望 新年愿望 新年愿望 新年愿望 新年愿望 早睡早起
+        </div>
+    </div>
+    <div class="ewms">
+        <div class="ewm"></div>
+    </div>
+</div>
+<div class="content"></div>
+<script src="js/lib/jquery/jquery-1.10.1.min.js"></script>
+<script src="js/lib/jquery/jquery.qrcode.min.js"></script>
+<script src="js/lib/html2canvas.min.js"></script>
+<script src="js/lib/html2canvas.svg.min.js"></script>
+<script>
+$(function () {
+    $('.ewm').qrcode({
+        render: "canvas",
+        text: "www.baidu.com"
+    });
+    setTimeout(function () {
+        $('.cover').remove()
+        html2canvas(document.body).then(function (canvas) {
+            document.body.appendChild(canvas);
+            $('body>canvas').addClass('canv')
+            $('.picture').remove();
+            var c = document.getElementsByClassName('canv')[0]
+            setTimeout(function () {
+                var base64 = c.toDataURL("image/jpg");
+                $('.canv').remove()
+                var a = document.getElementsByClassName('content')[0]
+                a.innerHTML = '<img src="' + base64 + '" >';
+            }, 1000)
+        })
+    }, 1500)
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="cont">
+    <div class="audio" id="audio">
+        <audio src="images/KingStar.mp3" loop="loop" preload="preload" hidden="true" autoplay="autoplay"
+               id="myAudio"></audio>
+        <a href="javascript:;" id="audio-play"><img src="images/3寻找福袋/音乐.png" alt="" id="music-img"></a>
+    </div>
+    <div class="search-title">
+        <img src="images/3寻找福袋/寻找福袋_标题.png" alt="">
+        <img src="images/imgs/yanhua3-compressor.gif" alt="" class="gif-title">
+    </div>
+    <div class="cont-imgs" id="cont-imgs">
+        <div class="img-item">
+            <!--风景图片-->
+            <img src="images/imgs/jingdian1.png" alt="" class="img-main">
+            <!--福袋-->
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed "></a>
+            <!--文字内容图片-->
+            <div class="img-w">
+                <img src="images/imgs/text1.png" alt="" class="img-text img1">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jingdian2.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text2.png" alt="" class="img-text img2">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jingdain3.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text3.png" alt="" class="img-text">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jingdian4.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text4.png" alt="" class="img-text">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jingdian5.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text5.png" alt="" class="img-text">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jingdian6.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text6.png" alt="" class="img-text">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jigndian7.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text7.png" alt="" class="img-text">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jigndain8.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text8.png" alt="" class="img-text">
+            </div>
+        </div>
+        <div class="img-item">
+            <img src="images/imgs/jingdain9.png" alt="" class="img-main">
+            <a href="javascript:;"><img src="images/3寻找福袋/福袋_小.png" alt="" class="bag-fixed"></a>
+            <div class="img-w">
+                <img src="images/imgs/text9.png" alt="" class="img-text">
+            </div>
+        </div>
+    </div>
+    <div class="cont-btns">
+        <!--<a href="javascript:;">-->
+            <!--<img src="images/3寻找福袋/分享好友_按钮.png" alt="">-->
+        <!--</a>-->
+        <!--<a href="javascript:;">-->
+            <!--<img src="images/3寻找福袋/注册校友名片_按钮.png" alt="">-->
+        <!--</a>-->
+    </div>
+</div>
+<script src="js/lib/rem/rem.js"></script>
+<script src="js/lib/jquery/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        //控制音乐
+        var music = document.getElementById('myAudio');
+        $('#audio-play').on('click', function () {
+            if (music.paused) {
+                music.play();
+                $('#music-img').addClass('rotate');
+            } else {
+                $('#myAudio').remove()
+                music.pause();
+                $('#music-img').removeClass('rotate');
+            }
+        });
+
+        //图片下面的文字显示与隐藏
+        var imgCount = $('.img-item').length;
+        $('.img1,.img2').fadeIn(3000);
+        $(window).on('scroll', function () {
+            for (var i = 2, len = imgCount; i < len; i++) {
+                var a = $('.img-item').eq(i).offset().top;
+                var b = $(window).scrollTop();
+                console.log(a);
+                console.log(b);
+                if (b > a - 420) {
+                    $('.img-text').eq(i).fadeIn(2000);
+                } else if (b < a - 420) {
+                    $('.img-text').eq(i).fadeOut(1000);
+                }
+            }
+        });
+
+        //添加烟花GIF
+        for (var i = 0, len = imgCount; i < len; i++) {
+            var eq = $('.img-item').eq(i).index()
+            if (((eq + 1) / 2) % 2 == 0) {
+                $('.img-item').eq(i).append('<img src="images/烟花2.gif" alt="" class="img-even">');
+            } else if (((eq + 1) / 2) % 2 == 1) {
+                $('.img-item').eq(i).append('<img src="images/烟花1.gif" alt="" class="img-odd">');
+            }
+        }
+
+        //福袋位置
+        var fixedAll = $('.bag-fixed').length;
+        for (var i = 0, len = fixedAll; i < len; i++) {
+            var x = Math.random() * 6.5;
+            var y = Math.random() * 3.2;
+            $('.bag-fixed').eq(i).css({'left': x + 'rem', 'top': y + 'rem'});
+            console.log('x:' + x + '\n' + 'y:' + y);
+        }
+        ;
+
+
+        //福袋抖动
+        function shake() {
+            $('.bag-fixed').addClass('shake');
+        }
+
+        function removeshake() {
+            $('.bag-fixed').removeClass('shake');
+        }
+
+        var timer = null;
+        clearInterval(timer);
+        setInterval(shake, 4000);
+        setInterval(removeshake, 5000);
+    })
+</script>
+</body>
+</html>

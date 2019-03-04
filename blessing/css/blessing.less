@@ -1,0 +1,147 @@
+.Popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .popupBg{
+    background: #000;
+    opacity: .7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .PopupCenter{
+    width: 6rem;
+    height: 10.64rem;
+    position: absolute;
+    top: 3.5%;
+    left: 50%;
+    margin-left: -3rem;
+    z-index: 33;
+    .blessImg{
+      width: 100%;
+      height: 7.8rem;
+      background-image: url("../images/wishCard.png");
+      background-size: 100% 100%;
+      background-position: center center;
+      position: relative;
+      .close{
+        width: .6rem;
+        height: .6rem;
+        background: url("../images/closeBtn.png");
+        background-size: 100% 100% ;
+        background-position: center center;
+        position: absolute;
+        top: .3rem;
+        right: .38rem;
+      }
+      .wish{
+        width: 100%;
+        height: 3.42rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0 .7rem .95rem;
+        box-sizing: border-box;
+        .wishWord{
+          height: 1.06rem;
+          width: 100%;
+          position: relative;
+          font-size: .3rem;
+          line-height: .52rem;
+          color:rgba(218,40,30,1);
+          font-weight: 800;
+          text-shadow: .01rem .01rem rgba(0,0,0,0.24);
+          &:before{
+            position: absolute;
+            bottom: .56rem;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: .02rem;
+            background:rgba(218,40,30,1);
+            opacity:0.5;
+            border-radius:1px;
+            transform: scaleY(.5);
+          }
+          &:after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: .02rem;
+            background:rgba(218,40,30,1);
+            opacity:0.5;
+            border-radius:1px;
+            transform: scaleY(.5);
+          }
+        }
+        .wishSelf{
+          margin-top: .26rem;
+          width: 100%;
+          height: 1.14rem;
+          border:.02rem dashed rgba(238,49,44,.5);
+          box-shadow:.07rem .07rem  .22rem  .02rem rgba(0, 0, 0, 0.14);
+          border-radius:.1rem;
+          box-sizing: border-box;
+          textarea{
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+            margin: 0;
+            resize: none;
+            box-sizing: border-box;
+            padding: .16rem .2rem;
+            font-size:.28em;
+            font-weight:600;
+            color:rgba(238,49,44,1);
+            line-height:.38rem;
+            outline: none;
+            &::-webkit-input-placeholder{
+              color:rgba(238,49,44,.7);
+            }
+          }
+        }
+      }
+    }
+    .wishSelfWord{
+      overflow: hidden;
+      div{
+        width:1.7rem;
+        height:.6rem;
+        background:rgba(253,230,218,1);
+        box-shadow:.07rem .07rem .22rem .02rem rgba(0, 0, 0, 0.14);
+        border-radius:.1rem;
+        font-size:.3rem;
+        color:rgba(238,49,44,1);
+        line-height: .6rem;
+        text-align: center;
+        float: left;
+        margin-left: .45rem;
+        margin-top: 4%;
+        font-weight: 800;
+      }
+      div:nth-child(1),div:nth-child(4){
+        margin-left: 0;
+      }
+      div:nth-child(3){
+        font-size: .24rem;
+      }
+    }
+    .Save{
+      margin: .39rem auto 0;
+      width:2.67rem;
+      height:.69rem;
+      border-radius:.1rem;
+      background-image: url("../images/wishsave.png");
+      background-size: 100% 100%;
+      background-position: center center;
+    }
+  }
+}

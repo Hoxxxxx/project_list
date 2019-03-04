@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点击福袋-模态框悬浮层</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/blessing.css">
+    <script src="js/lib/rem/rem.js"></script>
+</head>
+<body>
+<div class="Popup">
+    <div class="popupBg"></div>
+    <div class="PopupCenter">
+        <div class="blessImg">
+            <div class="close"></div>
+            <div class="wish">
+                <div class="wishWord">祝福语：祝福语祝福语祝福语祝福语祝福语祝福语祝</div>
+                <div class="wishSelf">
+                    <textarea maxlength="28" placeholder="立个新年Flag:" class="textareas"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="wishSelfWord">
+            <div>瘦十斤</div>
+            <div>长高高</div>
+            <div>去钓鱼岛钓鱼</div>
+            <div>买新车</div>
+            <div>早睡早起</div>
+            <div>脱单</div>
+        </div>
+        <div class="Save"></div>
+    </div>
+</div>
+<script src="js/lib/jquery/jquery-1.10.1.min.js"></script>
+<script>
+    $(function () {
+        $('.Popup').click(function (e) {
+            e.stopPropagation()
+        })
+        setInterval(function () {
+            if($('.textareas').val().indexOf(' ')==-1){
+                $('.textareas').attr('maxlength','28')
+            }else {
+                $('.textareas').attr('maxlength','30')
+            }
+        },500)
+        $('.wishSelfWord>div').bind('click',function () {
+            $('.textareas').attr('maxlength','30')
+            if ( $('.textareas').val().length<29){
+                $('.textareas').html($('.textareas').val())
+                if(( $('.textareas').html().length+$(this).html().length)<=28){
+                    if ($('.textareas').val()==0){
+                        $('.textareas').html($('.textareas').html()+$(this).html())
+                    } else {
+                        $('.textareas').html($('.textareas').html()+' '+$(this).html())
+                    }
+                    $('.textareas').val($('.textareas').html())
+                }else {
+                    return false
+                }
+            }//else {
+            //     $('.textareas').val($('.textareas').val().substring(0, 26))
+            //     $('.textareas').html($('.textareas').val())
+            // }
+        })
+        $('.textareas').keyup(function () {
+            $('.textareas').html($('.textareas').val())
+        })
+        $('.close').bind('click',function () {
+            $('.Popup').hide()
+        })
+        $('.Save').bind('click',function () {
+            window.location.href='preservation.html';
+        })
+    })
+</script>
+</body>
+</html>
