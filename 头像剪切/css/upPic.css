@@ -1,0 +1,233 @@
+body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    /* 背景图片 只需放入图片地址*/
+    /*background: url("../images/bg.jpg") no-repeat;*/
+    font-family: "微软雅黑", STXihei, "黑体";
+    background-image: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    /*background: -webkit-linear-gradient(lightgreen, lightskyblue); !* Safari 5.1 - 6.0 *!*/
+    /*background: -o-linear-gradient(lightgreen, lightskyblue); !* Opera 11.1 - 12.0 *!*/
+    /*background: -moz-linear-gradient(lightgreen, lightskyblue); !* Firefox 3.6 - 15 *!*/
+    /*background: linear-gradient(lightgreen, lightskyblue);*/
+    font-size : small;
+}
+html{
+    /*font-size: 40px;*/
+}
+.audio{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 50px;
+    right: 40px;
+}
+.audio img{
+    width: 70px;
+    height: 70px;
+}
+.header{
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 200px;
+}
+.school-name{
+    height: 100px;
+    text-align: center;
+    font: italic bold 80px 华文行楷;
+    letter-spacing: 20px;
+}
+.school-saying{
+    height: 100px;
+    margin-top: 30px;
+    font: normal bold 40px "Times New Roman";
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: 10px;
+}
+.a-center{
+    height: 100px;
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.school-saying img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.school-saying h4{
+    margin-left: 20px;
+    float: left;
+}
+.template-List{
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+}
+.list-Header{
+    width: 66%;
+    height: 80px;
+    margin: 0 auto;
+    border: 2px solid palevioletred;
+    border-radius: 14px;
+    text-align: center;
+    font: normal bold 50px "Times New Roman";
+    letter-spacing: 8px;
+    line-height: 80px;
+}
+.list-First{
+    width: 100%;
+    margin: 50px auto;
+}
+.list-Two{
+    height: auto;
+    margin-top: 100px;
+}
+.list-Title{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border: 2px solid palevioletred;
+    border-radius: 14px;
+    font: normal normal 40px "微软雅黑";
+    line-height: 60px;
+}
+.item-All{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.item{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin-bottom: 50px;
+    border: 2px solid palevioletred;
+    border-radius: 6px;
+}
+.item img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+.up-pic{
+    width: 80%;
+    height: 400px;
+    margin: 50px auto;
+}
+.pic-Template{
+    width: 400px;
+    height: 400px;
+    float: left;
+    border: 2px solid palevioletred;
+}
+.pic-Template img{
+    width: 400px;
+    height: 400px;
+}
+.pic-Submit{
+    width: 250px;
+    height: 400px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.pic-Upload,.pic-Make{
+    position: relative;
+    text-align: center;
+    line-height: 80px;
+    border: 2px solid palevioletred;
+    width: 250px;
+    height: 80px;
+    border-radius: 18px;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+.pic-Upload input,.pic-Make input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 80px;
+    width: 250px;
+}
+.shear{
+    width: 80%;
+    height: auto;
+    margin: 100px auto;
+}
+.pic-shear{
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    border: 2px solid palevioletred;
+}
+.pic-shear1{
+    width: 440px;
+    height: 440px;
+    margin: 50px auto;
+    border: 2px solid palevioletred;
+    -webkit-touch-callout:default;
+}
+.hide{
+    display: none;
+}
+.preview{
+    width: 80%;
+    height: 600px;
+    margin: 100px auto;
+}
+.pre-Title{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-radius: 14px;
+    font: normal normal 40px "微软雅黑";
+    line-height: 60px;
+}
+.hide{
+    display: none;
+}
+
+
+/*图标旋转*/
+.rotate{
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
+@-moz-keyframes rotate{from{-moz-transform: rotate(0deg)}
+    to{-moz-transform: rotate(359deg)}
+}
+@-o-keyframes rotate{from{-o-transform: rotate(0deg)}
+    to{-o-transform: rotate(359deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/upPic.css">
+</head>
+<body>
+<div class="audio " id="bg_music" state="1">
+    <audio src="images/123.mp3" loop="loop" preload="preload" id="myAudio" hidden="true" autoplay="autoplay"></audio>
+    <a href="javascript:;" id="audio-play"><img src="images/music.png" alt="" id="music-img"></a>
+</div>
+<div class="header">
+    <div class="school-name">北京理工大学</div>
+    <div class="school-saying">
+        <div class="a-center">
+            <img src="images/school.png" alt="">
+            <h4>德以明理，学以精工</h4>
+        </div>
+    </div>
+</div>
+<div class="template-List">
+    <div class="list-Header">头像模板分类列表</div>
+    <!--分类模板   如需添加新模板直接复制一份类名为'list-first'  的div  -->
+    <div class="list-First">
+        <div class="list-Title">校园风景</div>
+        <div class="item-All list-one">
+            <div class="item"><img src="images/1%20(1).png" alt=""></div>
+            <div class="item"><img src="images/1%20(2).png" alt=""></div>
+            <div class="item"><img src="images/1%20(3).png" alt=""></div>
+            <div class="item"><img src="images/1%20(4).png" alt=""></div>
+            <div class="item"><img src="images/1%20(5).png" alt=""></div>
+            <div class="item"><img src="images/1%20(6).png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="list-First">
+        <div class="list-Title">可爱风</div>
+        <div class="item-All list-two">
+            <div class="item"><img src="images/1%20(7).png" alt=""></div>
+            <div class="item"><img src="images/1%20(8).png" alt=""></div>
+            <div class="item"><img src="images/module2.png" alt=""></div>
+            <div class="item"><img src="images/module1.png" alt=""></div>
+        </div>
+    </div>
+</div>
+<div class="up-pic" id="up-pic">
+    <div class="pic-Template">
+        <img src="" alt="" id="view1">
+    </div>
+    <div class="pic-Submit">
+        <div class="pic-Upload">上传图片
+            <input type="file" id="file">
+        </div>
+
+        <div class="pic-Make" id="clipBtn">
+            <a href="#view">生成头像</a>
+            <input type="button" id="box" onclick="hecheng()">
+        </div>
+    </div>
+</div>
+<div class="shear " id="">
+    <div class="list-Title">裁剪框</div>
+    <div class="pic-shear " id="clipArea"></div>
+</div>
+<div class="preview hide">
+    <div class="pre-Title">北京理工专属头像生成，请长按保存哟</div>
+    <div class="pic-shear1 " id="view"></div>
+</div>
+
+<script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/iscroll-zoom.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/lrz.all.bundle.js"></script>
+<script src="js/jquery.photoClip.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    var clipArea = new bjj.PhotoClip("#clipArea", {
+        size: [420, 420],
+        outputSize: [640, 640],
+        file: "#file",
+        view: "#view1",
+        ok: "#clipBtn",
+        loadStart: function () {
+            console.log("照片读取中");
+        },
+        loadComplete: function () {
+            console.log("照片读取完成");
+        },
+        clipFinish: function (dataURL) {
+            //console.log(dataURL);
+        }
+    });
+    //控制音乐
+    var music = document.getElementById('myAudio');
+    $('#audio-play').on('click', function () {
+        if (music.paused) {
+            music.play();
+            $('#music-img').addClass('rotate')
+        } else {
+            $('#myAudio').remove()
+            music.pause();
+            $('#music-img').removeClass('rotate')
+        }
+    });
+
+    //模板选择
+    $('.list-one img').each(function () {
+        $(this).click(function () {
+            var url = $(this).prop('src')
+            $('#view1').attr('src', url);
+            data[0] = url;
+            var t = $('#view1').offset().top;//  获取需要跳转到标签的top值
+            $(window).scrollTop(t);// 跳转到指定位置
+            $('#file').prop('disabled','');
+        })
+    })
+    $('.list-two img').each(function () {
+        $(this).click(function () {
+            var url = $(this).prop('src')
+            $('#view1').attr('src', url);
+            data[0] = url;
+            var t = $('#view1').offset().top;//  获取需要跳转到标签的top值
+            $(window).scrollTop(t);// 跳转到指定位置
+            $('#file').prop('disabled','')
+        })
+    })
+
+
+    var timeOutEvent = 0;
+    $(function () {
+        $("#view").on({
+            touchstart: function (e) {
+                timeOutEvent = setTimeout("longPress()", 500);
+                e.preventDefault();
+            },
+            touchmove: function () {
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+            },
+            touchend: function () {
+                clearTimeout(timeOutEvent);
+                if (timeOutEvent != 0) {
+                    // alert("你这是点击，不是长按");
+                }
+                return false;
+            }
+        })
+    });
+
+    function longPress() {
+        timeOutEvent = 0;
+        savePicture();
+    }
+
+    function savePicture() {
+        // 创建下载任务
+        var picurl = "http:///Public/Uploads/dingwei/erwei.png";
+        //图片保存到手机后的路径
+        var picname = "_downloads/erwei.png";
+        var dtask = plus.downloader.createDownload(picurl, {}, function (d, status) {
+            // 下载完成
+            if (status == 200) {
+                //	alert( "Download success: " + d.filename );
+                plus.gallery.save(picname, function () {//保存到相册方法
+                    mui.toast('已保存到手机相册');
+                }, function () {
+                    mui.toast('保存失败，请重试！');
+                });
+            } else {
+                //	alert( "Download failed: " + status ); 
+            }
+        });
+        //dtask.addEventListener( "statechanged", onStateChanged, false );
+        dtask.start();//开始下载
+    }
+
+    //是否已选择模板的判断并控制 type=file 的选择本地文件的功能
+    $('#file').on('click', function () {
+        if ($('#view1').attr('src').length !== 0) {
+            $(this).prop('disabled','');
+            // alert('已选择模板')
+        } else {
+            alert('请先选择模板！');
+            $(this).prop('disabled', 'disabled');
+            return false;
+        }
+    })
+
+
+    function hecheng() {
+        $('.preview').removeClass('hide');
+        draw();
+        var t = $('#view').offset().top;//  获取需要跳转到标签的top值
+        $(window).scrollTop(t);// 跳转到指定位置
+    }
+
+    var data = [];
+
+    function draw() {
+        var c = document.createElement('canvas'),
+            ctx = c.getContext('2d');
+        //获取input中的图片路径
+        // bb = document.getElementById('file'),
+        // file = bb.files[0],
+        // url = window.URL.createObjectURL(file);
+
+        // data[1] = url;
+        c.width = 440;
+        c.height = 440;
+        var center = 220;
+        ctx.clearRect(0, 0, c.width, c.width); // 清空画布
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(center, center, 310, 0, Math.PI * 2, false);//canvas 创建一个圆形
+        ctx.clip();//剪切一个矩形区域
+
+        setTimeout(function () {
+            var myImage = new Image();
+            //获取预览框中的剪切下来的图片
+            var bgImgBase64 = document.getElementById('view1').style.backgroundImage;
+            bgImgBase64 = bgImgBase64.substring(5, bgImgBase64.length - 2);
+            // myImage.src = data[1];
+
+
+            myImage.src = bgImgBase64;
+            myImage.crossOrigin = 'Anonymous';
+            myImage.onload = function () {
+                ctx.drawImage(myImage, 0, 0, 440, 440);
+                var myImage2 = new Image();
+                myImage2.src = data[0];
+                myImage2.crossOrigin = 'Anonymous';
+                myImage2.onload = function () {
+                    ctx.drawImage(myImage2, 0, 0, 440, 440);
+                    var base64 = c.toDataURL("image/png"); //把图片转换成 base64 格式
+                    // console.log(base64);
+                    var img = document.getElementById('view');
+                    img.innerHTML = '<img src="' + base64 + '" >';
+                }
+            }
+        }, 200);
+    }
+</script>
+</body>
+</html>
