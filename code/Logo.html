@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="bill_box" id="bill_box">
+    <div class="bill_out">
+        <div class="bill" id="wrapper">
+            <img src="images/5.jpg" alt="" class="background">
+            <img src="images/logo.png" alt="" class="logo">
+            <div class="content">
+                <h5>尊敬的 <span class="dona_name">姚杰</span></h5>
+                <h4>已收到您的善款 <span class="dona_money">10000</span> 元，您的每一笔捐款都是对母校最深的祝福和期许，创建更美好的校园
+                    ，是你我共同的光荣与梦想！
+                </h4>
+                <h4>特颁此证，一致谢忱！</h4>
+                <div class="time">
+                    <h5>首都经济贸易大学教育基金会</h5>
+                    <h5>2019年10月26日</h5>
+                    <img src="images/yinzhang.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="close">
+            <img src="images/close.png" alt="点击我下载证书哟！">
+        </div>
+        <div class="save_btn"></div>
+    </div>
+</div>
+<script src="js/rem/rem.js"></script>
+<script src="js/jquery/jquery-3.3.1.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/html2canvas.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.close').trigger('click',make())
+    })
+    function make(){
+        if($(".save_btn:has(p)").length==0){
+            html2canvas($("#wrapper")[0]).then((imgUrl) => {
+                let oImg = document.createElement('img');
+                oImg.id = 'oImg';
+                oImg.className = 'o-img';
+                var dataurl=imgUrl.toDataURL()
+                oImg.src = dataurl;//imgUrl是html2canvas返回的截图的base64码
+                $('.bill_out').append(oImg);//将生成的截图放到页面中
+                $(".save_btn").append('<p class="save">长按证书保存哟！</p>');
+            })
+        }else{
+            return  false;
+        }
+    }
+</script>
+</body>
+</html>

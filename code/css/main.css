@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+}
+
+.search_box{
+    width: 100%;
+    height: 2rem;
+}
+.dona_box{
+    width: 100%;
+    height: 2rem;
+    background: #ffffff;
+}
+.dona_box label{
+    font-size: 0.3rem;
+    margin-left: 0.35rem;
+}
+.name{
+    font-size: 0.34rem;
+    margin-bottom: -0.3rem;
+}
+.name_input{
+    width: 4.2rem;
+    height: 0.5rem;
+    outline: none;
+    border: none;
+    background: rgb(246,246,246);
+    padding: 0.1rem 0.2rem  ;
+    border-radius: 0.05rem;
+    letter-spacing: 0.01rem;
+    margin-left: 0.4rem;
+}
+.search{
+    letter-spacing: 0.02rem;
+    outline: none;
+    border: none;
+    width: 1.8rem;
+    height: 0.7rem;
+    border-radius: 0.06rem;
+    background: rgb(241,163,11);
+    text-align: center;
+    line-height: 0.5rem;
+    color: #ffffff;
+    font-size: 0.32rem;
+}
+
+.item_list{
+    width: 6.9rem;
+    height: auto;
+    margin: 0 auto;
+    font-size: 0.3rem;
+}
+.dona_item{
+    border-bottom: 1px solid darkgray;
+    padding: 0.2rem 0.2rem;
+}
+.dona_name_box{
+    color: #000!important;
+}
+.dona_name_box:after{
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: '';
+    clear: both;
+}
+.dona_name_box>span:first-child{
+    float: left;
+}
+.dona_name_box>span:nth-of-type(2){
+    float: right;
+}
+.dona_text,.dona_time{
+    font-size: 0.26rem;
+    color: #666666;
+    margin-top: 0.16rem;
+}
+.dona_num{
+    color: rgb(241,163,11);
+    margin-right: 0.1rem;
+}
+/*账单蒙版弹出框*/
+.bill{
+    position: relative;
+    width: 7.5rem;
+    height: 11rem;
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7.5rem;
+    height: 11rem;
+    z-index: 1;
+}
+.bill_box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.bill_out{
+    position: relative;
+    width: 7.5rem;
+    height: 11rem;
+}
+.bill_out>h5{
+    position: absolute;
+    font-size: 0.4rem;
+    color: #000;
+    left: 0;
+    bottom: 0rem;
+    color: #ffffff;
+}
+.logo{
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+.content{
+    position: relative;
+    z-index: 10;
+    width: 5.2rem;
+    margin: 0 auto;
+    margin-top: 1.8rem;
+    font-size: 0.3rem;
+}
+.content>h5{
+    letter-spacing: 0.02rem;
+    font-size: 0.26rem;
+    color: rgb(117,116,112);
+}
+.content>h4{
+    letter-spacing: 0.02rem;
+    text-indent: 0.6rem;
+    color: rgb(117,116,112);
+    font-size: 0.26rem;
+}
+.content>h4:nth-of-type(1){
+    margin-top: 0.2rem;
+}
+.time{
+    position: relative;
+    margin-top: 0.4rem;
+    text-align: right;
+    color: rgb(117,116,112);
+}
+.time>img{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    right: 0.7rem;
+    top: -0.16rem;
+}
+.close{
+    position: absolute;
+    right: 0.2rem;
+    bottom: -1.1rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    opacity: 0;
+}
+.close img{
+    width: 0.8rem;
+}
+.dona_name{
+    color: rgb(180,27,29);
+}
+.dona_money{
+    color: rgb(180,27,29);
+    font-size: 0.4rem;
+}
+.save_btn{
+    width: 3rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%,-50%);
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+.save{
+    color: #000;
+}
+#oImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 999;
+}
+
+
