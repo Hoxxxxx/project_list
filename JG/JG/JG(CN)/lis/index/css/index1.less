@@ -1,0 +1,400 @@
+//导航修改
+.finance_carousel{
+  .carousel-inner{
+      .carousel_box{
+        width:6.9rem;
+        height:2.56rem;
+        background:rgba(12,0,46,.6);
+        position: absolute;
+        top: 1.9rem;
+        left: .3rem;
+        .carousel_box1{
+          height: 100%;
+          .carousel_box2{
+            height: 100%;
+            padding: .26rem .3rem;
+            >div:nth-of-type(1){
+              height:.94rem;
+              font-size:.65rem;
+              font-weight:900;
+              color:rgba(255,255,255,1);
+              line-height:.92rem;
+            }
+            >div:nth-of-type(2){
+              height:.4rem;
+              font-size:.28rem;
+              font-weight:600;
+              color:rgba(255,255,255,1);
+              line-height:.4rem;
+              margin-bottom: .26rem;
+              position: relative;
+              &:after{
+                position: absolute;
+                content: '';
+                width:2.4rem;
+                height:.04rem;
+                background:rgba(255,255,255,1);
+                left: 0;
+                top: .5rem;
+              }
+            }
+            >div:nth-of-type(3),>div:nth-of-type(4){
+              height:.2rem;
+              font-size:.14rem;
+              font-weight:600;
+              color:rgba(255,255,255,1);
+              line-height:.2rem;
+              margin-bottom: .05rem;
+              white-space:nowrap;
+              overflow:hidden;
+              text-overflow:ellipsis;
+            }
+          }
+        }
+      }
+  }
+  .carousel-indicators{
+    .active{
+      width: .12rem;
+      height: .12rem;
+    }
+    li{
+      width: .1rem;
+      height: .1rem;
+    }
+  }
+}
+
+//校友信息更新及查找
+//校友专享
+.finance_special{
+  //校友信息更新及查找
+  >div:nth-of-type(1){
+    width:6.9rem;
+    height:4.39rem;
+    margin: .5rem .3rem;
+    background:rgba(243,237,243,1);
+    >div:nth-of-type(1){
+      height:1.34rem;
+      text-align: center;
+      background:rgba(128,58,138,1);
+      img{
+        height: .8rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    >div:nth-of-type(2){
+      padding: .24rem .5rem;
+      >div:nth-of-type(1){
+        height:.5rem;
+        font-size:.36rem;
+        font-weight:500;
+        color:rgba(128,58,138,1);
+        line-height:.5rem;
+        margin-bottom: .24rem;
+      }
+      >div:nth-of-type(2){
+        height:.8rem;
+        font-size:.28rem;
+        font-weight:400;
+        color:rgba(128,58,138,1);
+        line-height:.4rem;
+        margin-bottom: .4rem;
+      }
+      >div:nth-of-type(3){
+        width:2.23rem;
+        height:.58rem;
+        border:.01rem solid rgba(128,58,138,1);
+        box-shadow: 0.08rem 0.06rem 0rem #803A8A;
+        font-size:.28rem;
+        font-weight:400;
+        color:rgba(128,58,138,1);
+        line-height:.58rem;
+        text-align: center;
+      }
+    }
+  }
+  //校友专享
+  >div:nth-of-type(2){
+    margin: 0 .3rem;
+    >div:nth-of-type(1){
+      margin-bottom: .5rem;
+      >div:nth-of-type(1){
+        height:.5rem;
+        font-size:.36rem;
+        font-weight:600;
+        color:rgba(128,58,138,1);
+        line-height:.5rem;
+        img{
+          width: .35rem;
+          margin: 0 0 .08rem .16rem;
+        }
+      }
+      >div:nth-of-type(2){
+        height:.33rem;
+        font-size:.24rem;
+        font-weight:400;
+        color:rgba(128,58,138,1);
+        line-height:.33rem;
+      }
+    }
+    >div:nth-of-type(2){
+      overflow: hidden;
+      >a{
+        display: block;
+        float: left;
+        width:2.3rem;
+        height:3.5rem;
+        background:rgba(255,255,255,1);
+        &:nth-of-type(2){
+          border-left: .01rem solid #DABEDE;
+          border-right: .01rem solid #DABEDE;
+        }
+        >div:nth-of-type(1){
+          img{
+            width: 1rem;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+          }
+        }
+        >div:nth-of-type(2){
+          margin-top: .4rem;
+          height:.42rem;
+          font-size:.3rem;
+          font-weight:400;
+          color:rgba(51,51,51,1);
+          line-height:.42rem;
+          text-align: center;
+        }
+        >div:nth-of-type(3){
+          margin-top: 1.2rem;
+          img{
+            width: .6rem;
+            height: .17rem;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//背景图
+.finance_bgm{
+  height: 1.1rem;
+  width: 100%;
+  background-image: url(../../../img/bgm.png);
+  -webkit-background-size: auto 1.28rem;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  background-position: 1.5rem .2rem;
+}
+
+//优质校友讲座
+.finance_support{
+  height:4.83rem;
+  //background:rgba(80,5,91,.5);
+  background-image: url("../../../img/bg_phone.png");
+  background-size: 100% 100%;
+  padding:.45rem .3rem ;
+  >div:nth-of-type(1){
+    position: relative;
+    span{
+      display: inline-block;
+      height: 0.5rem;
+      font-size: 0.36rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 0.5rem;
+    }
+    >img{
+      height: .4rem;
+      font-size: 0;
+      margin-bottom: .15rem;
+      margin-left: .1rem;
+    }
+    .swiper_you{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0.7rem;
+      height: 0.7rem;
+      background-image: url("../../../img/you.png");
+      background-size: 100% 100%;
+    }
+    .swiper_zuo{
+      position: absolute;
+      bottom: 0;
+      right: 0.7rem;
+      width: 0.7rem;
+      height: 0.7rem;
+      background-image: url("../../../img/zuo.png");
+      background-size: 100% 100%;
+    }
+  }
+  >div:nth-of-type(2){
+    height:.33rem;
+    font-size:.24rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:.33rem;
+  }
+  >div:nth-of-type(3){
+    width: 6.9rem;
+    height: 2.31rem;
+    margin-top: .52rem;
+    .swiper-slide{
+      //width: 6.9rem!important;
+      //height: 2.31rem!important;
+      background-image: url("../../../img/Group.png");
+      background-size: 100% 100%;
+      position: relative;
+      .title{
+        font-size:.3rem;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+        line-height:2.31rem;
+        text-align: center;
+      }
+      .img{
+        width: .6rem;
+        height: .17rem;
+        position: absolute;
+        bottom: .39rem;
+        right: .63rem;
+        background-image: url("../../../img/Shapex.png");
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+
+
+.finance_support1{
+  padding:1.1rem .3rem 1.2rem;
+  background: #f1f1f1;
+  >div:nth-of-type(1){
+    position: relative;
+    >span{
+    height:.5rem;
+    font-size:.36rem;
+    font-weight:600;
+    color:rgba(51,51,51,1);
+    line-height:.5rem;
+  }
+    >img{
+      width: 0.35rem;
+      margin: 0 0 0.08rem 0.16rem;
+    }
+    .swiper_you1{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width:.7rem;
+      height:.7rem;
+      img{
+        width:.7rem;
+        height:.7rem;
+        &:nth-of-type(2){
+          display: none;
+        }
+      }
+    }
+    .swiper_zuo1{
+      position: absolute;
+      bottom: 0;
+      right: .7rem;
+      width: .7rem;
+      height: .7rem;
+      img{
+        width: .7rem;
+        height: .7rem;
+        &:nth-of-type(2){
+          display: none;
+        }
+      }
+    }
+  }
+  >div:nth-of-type(2){
+    height:.33rem;
+    font-size:.24rem;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:.33rem;
+  }
+  >.swiper-container1{
+    width:6.9rem;
+    height:5rem;
+    margin-top: .52rem;
+    overflow: hidden;
+    .swiper-slide1{
+      padding: .6rem .5rem;
+      >div:nth-of-type(1){
+        width: 100%;
+        height: 100px;
+        position: relative;
+        >div:nth-of-type(1){
+          margin-bottom: .24rem;
+          span{
+            font-size:.32rem;
+            font-weight:400;
+            color: #333;
+            line-height:.36rem;
+          }
+          span:nth-of-type(1){
+            color:rgba(128,58,138,1);
+          }
+        }
+        >div:nth-of-type(2),>div:nth-of-type(3),>div:nth-of-type(4){
+          font-size:.26rem;
+          margin-bottom: .1rem;
+          font-weight:400;
+          color:rgba(102,102,102,1);
+          line-height:.37rem;
+        }
+        >div:nth-of-type(5){
+          margin-top: .65rem;
+          width:2.23rem;
+          height:.58rem;
+          border:.01rem solid rgba(51,51,51,1);
+          box-shadow: .04rem .06rem 0 #333;
+          text-align: center;
+          font-size:.28rem;
+          font-weight:400;
+          color:rgba(51,51,51,1);
+          line-height:.58rem;
+        }
+      }
+    }
+    .swiper-slide-active{
+      box-shadow:0px 0px .14rem 0px rgba(230,230,230,1);
+      background:rgba(255,255,255,1);
+    }
+  }
+}
+.prev_btn{
+  >span{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.5rem;
+  }
+}
+.next_btn{
+  >span{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.5rem;
+  }
+}

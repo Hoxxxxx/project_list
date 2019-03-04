@@ -1,0 +1,186 @@
+@font-face {
+    /*font-family: 'pingfang';*/
+    /*src: url('../font/pingfang.ttf');*/
+    font-weight: normal;
+    font-style: normal;
+}
+/* css css rest*/
+html,body,div,h1,h2,h3,h4,h5,h6,p,span,textarea,select,ul,li,button,::before,::after{
+    margin:0;
+    padding:0;
+
+    /*内减模式 */
+    box-sizing: border-box!important;
+    /* 兼容-webkit-内核*/
+    -webkit-box-sizing: border-box;
+    /*  ie: -ms-
+        chrome:-webkit
+        firefox: -moz-
+        opera:  -o-
+        safair: -webkit-
+    */
+    /* 去除移动端的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+select{
+  border: none;
+}
+body{
+    color:#333;
+    font-family: "pingfang", Avenir Next, Times, Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", sans-serif !important;
+}
+
+a{
+    text-decoration: none!important;
+    color:#333;
+}
+
+a:hover{
+    text-decoration: none!important;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+input,button{
+    border:0 none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:transparent;
+    /* 在移动端 去除表单 默认的效果  input 透明*/
+    -webkit-appearance: none;
+}
+
+
+img{
+    border: 0;
+    vertical-align: middle;
+}
+
+/* common css*/
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+
+/* 清除出浮动*/
+.clearfix::after,
+.clearfix::before{
+    content:"";
+    height:0;
+    visibility: hidden;
+    line-height: 0;
+    clear:both;
+    display: block;
+}
+body{
+    font-size: 0;
+}
+body{
+    background-color: #fff!important;
+}
+
+.after,.before{
+    position: relative;
+}
+/*.before:before{*/
+    /*content: " ";*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*height: 0;*/
+    /*border-top: 1px solid #D8D8D8;*/
+    /*color: #e5e5e5;*/
+    /*-webkit-transform-origin: 0 0;*/
+    /*transform-origin: 0 0;*/
+    /*-webkit-transform: scaleY(0.4);*/
+    /*transform: scaleY(0.4);*/
+    /*z-index: 2;*/
+/*}*/
+.after:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    border-top: 1px solid #CCCCCC;
+    color: #e5e5e5;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    z-index: 2;
+}
+
+.table1_22 {
+    border-collapse: collapse;
+    border: 1px solid #979797;
+}
+.table1_22 th {
+    border-bottom: 1px solid #979797;
+    /*padding-right: 1em; /!* LTR *!/*/
+    /*text-align: left; /!* LTR *!/*/
+}
+.table1_22 tbody {
+    border-top: 1px solid #979797;
+}
+.table1_22 tr.even,
+.table1_22 tr.odd {
+    /*background-color: #eee;*/
+    border-bottom: 1px solid #979797;
+    padding: 0.1em 0.6em;
+}
+.table1_22 tr td {
+    border: 1px solid #979797;
+}
+
+
+.table1_11 {
+    border-collapse: collapse;
+    border: 1px solid #E1EAF0;
+}
+
+.table1_11 th {
+    border-bottom: 1px solid #E1EAF0;
+    /*padding-right: 1em; /!* LTR *!/*/
+    /*text-align: left; /!* LTR *!/*/
+}
+.table1_11 tbody {
+    border-top: 1px solid #E1EAF0;
+}
+.table1_11 tr.even,
+.table1_11 tr.odd {
+    /*background-color: #eee;*/
+    border-bottom: 1px solid #E1EAF0;
+    padding: 0.1em 0.6em;
+}
+.table1_11  tr td {
+    border: 1px solid #E1EAF0;
+}
+
+.amap-logo{
+    display: none!important;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ccc;
+}

@@ -1,0 +1,35 @@
+ul {
+  margin-top: 0.2rem;
+  margin-left: 0.3rem;
+}
+ul > li {
+  list-style: disc!important;
+  color: #666666;
+  margin: 0.1rem 0;
+}
+.teacher_list {
+  margin-left: 0!important;
+}
+.teacher_list > li {
+  list-style: none!important;
+}
+ol {
+  padding-left: 0.28rem;
+}
+ol > li {
+  list-style: decimal!important;
+  color: #666666;
+  margin: 0.1rem 0;
+}
+.title_purple {
+  color: #692B72;
+  font-size: 0.32rem;
+  font-weight: bold;
+}
+.normal_title {
+  color: #333333;
+  font-size: 0.28rem;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+/*# sourceMappingURL=message1.css.map */

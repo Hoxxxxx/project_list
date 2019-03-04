@@ -1,0 +1,247 @@
+.finance_content{
+  .nav_left{
+    margin-bottom: .52rem;
+    .last{
+      background-image:url("../../../img/activebg.png");
+      background-size: 100% 100%;
+      width: 6.91rem;
+      height: 1.9rem;
+      padding: .16rem;
+      >div{
+        width:6.65rem;
+        height:1.64rem;
+        padding: .24rem .36rem;
+        font-size:.28rem;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:.32rem;
+      }
+    }
+  }
+  .content_main_list{
+    //活动预告
+    >li:nth-of-type(1){
+      .content_main{
+        .lists{
+          border-bottom: .01rem solid #E2E2E2;
+          .list{
+            margin-bottom: .52rem;
+            img{
+              width:6.9rem;
+              height:4.46rem;
+              margin-bottom: .24rem;
+            }
+            .list-msg{
+              p:nth-of-type(1){
+                font-size:.3rem;
+                font-weight:500;
+                color:rgba(104,42,113,1);
+                line-height:.42rem;
+                margin-bottom: .18rem;
+              }
+              p{
+                font-size:.26rem;
+                font-weight:400;
+                color:rgba(102,102,102,1);
+                line-height:.37rem;
+                margin-bottom: .05rem;
+              }
+              a{
+                margin-top: .2rem;
+                display: block;
+                width:1.5rem;
+                height:.45rem;
+                border-radius:.04rem;
+                border:.02rem solid rgba(104,42,113,1);
+                font-size:.26rem;
+                font-weight:400;
+                color:rgba(104,42,113,1);
+                line-height:.45rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .pages{
+          height: .36rem;
+          margin-top: .6rem;
+          margin-bottom: 1.2rem;
+          position: relative;
+          .page{
+            position: relative;
+            float: left;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size:.28rem;
+            font-weight:400;
+            color:rgba(0,0,0,0.65);
+            line-height:.36rem;
+          }
+          img:nth-of-type(1){
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:.3rem;
+            height:.2rem;
+            transform: rotateZ(-90deg);
+            margin-top: 0.1rem;
+          }
+          img:nth-of-type(2){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width:.3rem;
+            height:.2rem;
+            transform: rotateZ(90deg);
+            margin-top: 0.1rem;
+          }
+        }
+      }
+    }
+    //活动回顾
+    >li:nth-of-type(2){
+      .content_main{
+        .year{
+          >ul{
+            height: 1.36rem;
+            >li{
+              float: left;
+              width:1.7rem;
+              height:.6rem;
+              border:.01rem solid #CDCDCD;
+              border-left: 0;
+              margin-bottom: .16rem;
+              font-size:.26rem;
+              font-weight:400;
+              color:rgba(102,102,102,1);
+              line-height:.6rem;
+              text-align: center;
+              &:nth-of-type(1){
+                border-left: .01rem solid #CDCDCD;
+              }
+              &:last-of-type{
+                width:3.4rem;
+                height:.6rem;
+                background:rgba(255,255,255,1);
+                border:.01rem solid rgba(205,205,205,1);
+                position: relative;
+                input{
+                  width: 80%;
+                  height: 100%;
+                  padding-left: .1rem;
+                }
+                .moreyesr{
+                  background:rgba(255,255,255,1);
+                  box-shadow:0px .01rem .04rem 0px rgba(0,0,0,0.2);
+                  display: none;
+                  position: absolute;
+                  z-index: 33;
+                  width: 3.4rem;
+                  margin-top: .1rem;
+                  ul{
+                    li{
+                      height:.5rem;
+                      font-size:.26rem;
+                      font-weight:400;
+                      color:rgba(0,0,0,0.65);
+                      line-height:.5rem;
+                    }
+                  }
+                }
+              }
+            }
+            .choose{
+              border: 1px solid #682A71!important;
+            }
+          }
+        }
+        .details{
+          margin-top: .42rem;
+          .lists{
+            width: 100%;
+            overflow: hidden;
+            .list{
+              width: 3.3rem;
+              .list-img{
+                height: 2.18rem;
+                position: relative;
+                >img{
+                  width:3.17rem;
+                  height:2.05rem;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  box-shadow: -.13rem  .13rem 0 #EDE7EE;
+                }
+                div{
+                  width:.45rem;
+                  height:.45rem;
+                  background:rgba(255,255,255,1);
+                  box-shadow:0px 0px .05rem 0px rgba(175,175,175,1);
+                  position: absolute;
+                  z-index: 333;
+                  bottom: 0;
+                  right: .13rem;
+                  text-align: center;
+                  line-height: .45rem;
+                  img{
+                    width: 75%;
+                    height: 75%;
+                  }
+                }
+              }
+              p{
+                margin-top: .13rem;
+                font-size:.3rem;
+                font-weight:500;
+                color:rgba(51,51,51,1);
+                line-height:.42rem;
+                margin-bottom: .36rem;
+              }
+              &:nth-of-type(2n){
+                float: right;
+              }
+              &:nth-of-type(2n+1){
+                float: left;
+              }
+            }
+          }
+          .pages{
+            height: .36rem;
+            margin-top: .6rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+            .page{
+              position: relative;
+              float: left;
+              left: 50%;
+              transform: translateX(-50%);
+              font-size:.28rem;
+              font-weight:400;
+              color:rgba(0,0,0,0.65);
+              line-height:.36rem;
+            }
+            img:nth-of-type(1){
+              position: absolute;
+              top: 0;
+              left: 0;
+              width:.3rem;
+              height:.2rem;
+              transform: rotateZ(-90deg);
+              margin-top: 0.1rem;
+            }
+            img:nth-of-type(2){
+              position: absolute;
+              top: 0;
+              right: 0;
+              width:.3rem;
+              height:.2rem;
+              transform: rotateZ(90deg);
+              margin-top: 0.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

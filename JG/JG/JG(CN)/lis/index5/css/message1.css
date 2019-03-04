@@ -1,0 +1,33 @@
+.finance_content {
+  margin-bottom: 1rem;
+}
+.finance_content > ul > li {
+  margin: 0.5rem 0;
+}
+.finance_content > ul > li > p {
+  color: #666666;
+}
+.finance_content > ul > li .apply {
+  position: relative;
+  display: block;
+  width: 2.4rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  text-align: left;
+  font-size: 0.26rem;
+  padding-left: 0.2rem;
+  color: #ffffff;
+  background: #AB70B3;
+}
+.finance_content > ul > li .apply > img {
+  width: 0.5rem;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.22rem;
+}
+.title_purple {
+  color: #692B72;
+  font-size: 0.32rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=message1.css.map */

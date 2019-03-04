@@ -1,0 +1,96 @@
+.finance_content .main .title p {
+  font-size: 0.36rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 0.5rem;
+  margin-top: 0.52rem;
+  padding-bottom: 0.12rem;
+  border-bottom: 0.01rem solid #cccccc;
+  margin-bottom: 0.24rem;
+}
+.finance_content .main .introduction {
+  background: #f0e7f1;
+  margin-bottom: 0.42rem;
+  padding: 0.3rem 0.15rem;
+  position: relative;
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 0.4rem;
+}
+.finance_content .main .introduction:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.05rem;
+  height: 100%;
+  background: #682a71;
+}
+.finance_content .main .introduction p {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 0.4rem;
+  margin: 0;
+}
+.finance_content .main .introduction div {
+  margin-top: 0.1rem;
+  height: 1rem;
+  position: relative;
+}
+.finance_content .main .introduction div img {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+.finance_content .main .introduction div span {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 0.32rem;
+}
+.finance_content .main .introduction div a {
+  width: 1.5rem;
+  height: 0.45rem;
+  border-radius: 0.04rem;
+  border: 0.02rem solid #682a71;
+  display: inline-block;
+  text-align: center;
+  line-height: 0.45rem;
+  font-size: 0.26rem;
+  font-weight: 400;
+  color: #682a71;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.finance_content .main .msg img {
+  width: 6.9rem;
+  height: 4.45rem;
+  margin-bottom: 0.43rem;
+}
+.finance_content .main .msg p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.36rem;
+}
+.finance_content .main .msg a {
+  display: block;
+  width: 3rem;
+  height: 0.9rem;
+  border-radius: 0.08rem;
+  border: 0.02rem solid #682a71;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.32rem;
+  font-weight: 400;
+  color: #682a71;
+  line-height: 0.9rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  margin-top: 0.6rem;
+}
+/*# sourceMappingURL=detail1.css.map */

@@ -1,0 +1,102 @@
+.finance_content {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.finance_content .font {
+  position: absolute;
+  top: 54px;
+  left: -57px;
+}
+.finance_content .font div {
+  width: 30px;
+  height: 30px;
+  background: #F0E7F1;
+  text-align: center;
+  line-height: 30px;
+}
+.finance_content .font div img {
+  height: 15px;
+  width: 15px;
+}
+.finance_content .main {
+  margin-bottom: 120px;
+}
+.finance_content .main .title {
+  margin-bottom: 42px;
+  border-bottom: 1px solid #cccccc;
+}
+.finance_content .main .title p {
+  height: 37px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 37px;
+  margin-bottom: 13px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.finance_content .main .title > div {
+  height: 17px;
+  margin-bottom: 20px;
+  line-height: 17px;
+  vertical-align: middle;
+}
+.finance_content .main .title > div img:nth-of-type(1) {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 3px;
+  margin-right: 11px;
+}
+.finance_content .main .title > div img {
+  width: 17px;
+  height: 17px;
+  margin-right: 11px;
+}
+.finance_content .main .title > div img:nth-of-type(2) {
+  margin-left: 25px;
+}
+.finance_content .main .title > div span {
+  height: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 17px;
+}
+.finance_content .main .introduction {
+  background: #f0e7f1;
+  margin-bottom: 42px;
+  padding: 42px 45px 41px 51px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 30px;
+}
+.finance_content .main .introduction:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 143px;
+  background: #682a71;
+}
+.finance_content .main .msg img {
+  width: 651px;
+  height: 421px;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 42px;
+}
+.finance_content .main .msg p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 22px;
+}
+/*# sourceMappingURL=detail2.css.map */

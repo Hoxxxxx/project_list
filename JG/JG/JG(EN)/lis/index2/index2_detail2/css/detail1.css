@@ -1,0 +1,60 @@
+.finance_content .main .title p {
+  font-size: 0.36rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 0.5rem;
+  margin-top: 0.52rem;
+  margin-bottom: 0.24rem;
+}
+.finance_content .main .title div {
+  padding-bottom: 0.24rem;
+  border-bottom: 0.01rem solid #cccccc;
+  margin-bottom: 0.24rem;
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.33rem;
+}
+.finance_content .main .title div img {
+  width: 0.25rem;
+  height: 0.25rem;
+  vertical-align: middle;
+  margin-right: 0.07rem;
+}
+.finance_content .main .title div img:nth-of-type(2) {
+  margin-left: 0.3rem;
+}
+.finance_content .main .introduction {
+  font-size: 0.28rem;
+  font-weight: 500;
+  background: #f0e7f1;
+  margin-bottom: 0.42rem;
+  padding: 0.15rem;
+  position: relative;
+  color: #333333;
+  line-height: 0.4rem;
+}
+.finance_content .main .introduction:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.05rem;
+  height: 100%;
+  background: #682a71;
+}
+.finance_content .main .msg {
+  margin-bottom: 1.2rem;
+}
+.finance_content .main .msg img {
+  width: 6.9rem;
+  height: 4.45rem;
+  margin-bottom: 0.43rem;
+}
+.finance_content .main .msg p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.36rem;
+}
+/*# sourceMappingURL=detail1.css.map */

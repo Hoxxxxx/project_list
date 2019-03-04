@@ -1,0 +1,27 @@
+.finance_content > .content_introduction {
+  margin-top: 0.4rem;
+}
+.finance_content > .content_introduction > p {
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.28rem;
+  color: #666666;
+}
+.finance_content > .content_contact {
+  margin: 0.4rem 0 1rem 0;
+}
+.finance_content > .content_contact > .contact_title {
+  border-left: 0.06rem solid #692B72;
+  padding-left: 0.1rem;
+  color: #692B72;
+  font-weight: bold;
+  font-size: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.finance_content > .content_contact > p {
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.28rem;
+  color: #666666;
+}
+/*# sourceMappingURL=message1.css.map */

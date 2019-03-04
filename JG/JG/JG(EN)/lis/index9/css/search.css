@@ -1,0 +1,141 @@
+.finance_content {
+  width: 1200px;
+  margin: 134px auto 0;
+}
+.finance_content > .searchbtn {
+  width: 880px;
+  height: 76px;
+  border: 2px solid #63236c;
+  margin: 0 auto 100px;
+  position: relative;
+}
+.finance_content > .searchbtn input {
+  width: 700px;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 76px;
+  padding-left: 30px;
+  letter-spacing: 2px;
+}
+.finance_content > .searchbtn a {
+  position: absolute;
+  width: 156px;
+  height: 76px;
+  right: -2px;
+  top: -2px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: 3px;
+  background-image: url("../../../img/btn_bg.png");
+  background-size: 100% 100%;
+  border: 2px solid #692B72;
+}
+.finance_content > .none p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.finance_content > .result .Recommend {
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+.finance_content > .result .Recommend > div:nth-of-type(1) span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 28px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+}
+.finance_content > .result .Recommend > div:nth-of-type(1) > img {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+}
+.finance_content > .result .Recommend > div:nth-of-type(2) {
+  height: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #999999;
+  line-height: 28px;
+}
+.finance_content > .result .result-items li {
+  margin-bottom: 32px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.finance_content > .result .result-items li p:nth-of-type(1) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 2px;
+  line-height: 20px;
+}
+.finance_content > .result .result-items li p:nth-of-type(2) {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #63236c;
+  line-height: 33px;
+}
+.finance_content > .result .result-items li p:nth-of-type(3) {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 25px;
+}
+.pagelist {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  margin-bottom: 121px;
+}
+.pagelist li {
+  float: left;
+  margin: 0 2px;
+}
+.pagelist .pagelist-span1 {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 14px;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+.pagelist .pagelist-span {
+  cursor: pointer;
+}
+.pagelist .pagelist-span2 {
+  padding: 3px 0;
+}
+.pagelist input {
+  width: 70px;
+  height: 26px;
+  margin: 2px;
+  border: 1px solid #D9D9D9;
+  text-align: center;
+}
+.selectlist {
+  margin: 0 10px !important;
+  padding: 3px;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 30px;
+  padding-top: 0;
+}
+.pageon {
+  background: #682A71;
+  color: #fff;
+  border: none!important;
+}
+.pagelist .pagenum {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=search.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="stylesheet" href="../../css/com/base.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap-3.3.7/bootstrap.min.css"/>
+    <link rel="stylesheet" media="(min-width:801px) and (max-width:1199px)" href="../../css/com/pad.css"/>
+    <link rel="stylesheet" media="(min-width:1200px)" href="../../css/com/index.css"/>
+
+    <link rel="stylesheet" media="(min-width:320px) and (max-width:800px)" href="css/message1.css"/>
+    <link rel="stylesheet" media="(min-width:801px) and (max-width:1199px)" href="css/message2.css"/>
+    <link rel="stylesheet" media="(min-width:1200px)" href="css/message.css"/>
+    <script src="../../js/lib/rem.js"></script>
+    <script src="../../js/lib/jquery.js"></script>
+    <script src="../../js/lib/bootstrap-3.3.7/bootstrap.min.js"></script>
+    <script src="../../js/com/index.js"></script>
+</head>
+<body>
+<div class="Login">
+    <div class="Login_outer">
+        <div class="Logo">
+            <img src="../../img/Logo2.png" alt="">
+        </div>
+        <div class="Login_box">
+            <form action="" id="Login" class="Login_submit_box">
+                <div class="username">
+                    <img src="../../img/username.png" alt="">
+                    <input type="text" placeholder="用户名为您的真实姓名" id="account">
+                    <div class="wrong_msg wrong_name hide">
+                        * 用户名不能为空
+                    </div>
+                </div>
+                <div class="password">
+                    <img src="../../img/password.png" alt="">
+                    <input type="password" placeholder="初始密码：123456" id="pwd">
+                    <div class="wrong_msg wrong_pwd hide">
+                        * 密码有误
+                    </div>
+                </div>
+                <div class="submit">
+                    <button>登录</button>
+                </div>
+                <div class="choosebox">
+                    <input type="checkbox" id="remember_pwd"><label for="remember_pwd">记住密码</label>
+                    <a href="javascript:;">忘记密码</a>
+                </div>
+                <div class="msg">
+                    如果登陆失败，请发邮件至 smealumni@cuhk.edu.cn
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+$(function () {
+    $('#account').blur(function () {
+        if($('#account').val()==''){
+            $('.wrong_name').removeClass('hide');
+            event.preventDefault();
+        }
+        else{
+            $('.wrong_name').addClass('hide');
+        }
+    })
+    $('#pwd').blur(function () {
+        if($('#pwd').val()==''){
+            $('.wrong_pwd').removeClass('hide');
+            event.preventDefault();
+        }
+        else{
+            $('.wrong_pwd').addClass('hide');
+        }
+    })
+})
+</script>
+</body>
+</html>

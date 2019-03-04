@@ -1,0 +1,716 @@
+.finance_content > div:nth-of-type(1) ul {
+  height: 0.6rem;
+  margin-bottom: 0.52rem;
+  margin-top: 0.52rem;
+}
+.finance_content > div:nth-of-type(1) ul li {
+  width: 2.3rem;
+  height: 0.6rem;
+  border: 0.01rem solid #cdcdcd;
+  float: left;
+  font-size: 0.26rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.6rem;
+  text-align: center;
+}
+.finance_content > div:nth-of-type(1) ul .choose {
+  border: 0.01rem solid #682a71;
+  color: #682a71;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li {
+  display: none;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg > span {
+  height: 0.48rem;
+  font-size: 0.34rem;
+  font-weight: 400;
+  color: #8f5497;
+  line-height: 0.48rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 {
+  margin-top: 0.42rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename {
+  height: 3.67rem;
+  position: relative;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(1) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(1) > p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(1) > p span {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #d61b00;
+  line-height: 0.4rem;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  margin-left: 0.04rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(1) input {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  padding-left: 0.3rem;
+  color: #333;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(2) > img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(2) a {
+  position: absolute;
+  bottom: 0;
+  right: 0.55rem;
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #8f5497;
+  line-height: 0.4rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 .basename > div:nth-of-type(2) a img {
+  width: 0.26rem;
+  height: 0.26rem;
+  vertical-align: middle;
+  margin-right: 0.09rem;
+  margin-top: -0.06rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div {
+  margin-top: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > p span {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #d61b00;
+  line-height: 0.4rem;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  margin-left: 0.04rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > input {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  padding-left: 0.3rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div.phone {
+  width: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div.phone input:nth-of-type(1) {
+  width: 1.5rem;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  margin-right: 0.2rem;
+  padding-left: 0.3rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div.phone input:nth-of-type(2) {
+  width: 5.1rem;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  padding-left: 0.3rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div {
+  width: 100%;
+  height: 0.7rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div .select1 {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/day.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 6.4rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div .select2 {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 2.85rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div .select2:nth-of-type(1) {
+  width: 3.35rem;
+  height: 0.7rem;
+  float: left;
+  border: 0.01rem solid #e2e2e2;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div > div .select2:nth-of-type(2) {
+  width: 3.35rem;
+  height: 0.7rem;
+  float: right;
+  border: 0.01rem solid #e2e2e2;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .basemsg .base1 > div > div .select1 {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 6.4rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 {
+  margin-top: 0.52rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > span {
+  height: 0.48rem;
+  font-size: 0.34rem;
+  font-weight: 400;
+  color: #8f5497;
+  line-height: 0.48rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div {
+  margin-top: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 {
+  margin-bottom: 0.24rem;
+  padding: 0.6rem 0.3rem;
+  width: 6.9rem;
+  background: #f8f8f8;
+  border: 0.01rem solid #e8e8e8;
+  position: relative;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div {
+  margin-bottom: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > p span {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #d61b00;
+  line-height: 0.4rem;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  margin-left: 0.04rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > input {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  padding-left: 0.3rem;
+  color: #333;
+  background: #ffffff;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > div .select1 {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 5.8rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > div .havetu.select1 {
+  background: url("../../../img/day.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 5.8rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > div > div {
+  width: 3.05rem;
+  height: 0.7rem;
+  background: #ffffff;
+  border: 0.01rem solid #e2e2e2;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > div > div .select2 {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 2.6rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > div > div:nth-of-type(1) {
+  float: left;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div > div > div:nth-of-type(2) {
+  float: right;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 > div .select22 {
+  overflow: hidden;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 a {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school1 a img {
+  width: 100%;
+  height: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 {
+  padding: 0.6rem 0.3rem;
+  width: 6.9rem;
+  background: #f8f8f8;
+  border: 0.01rem solid #e8e8e8;
+  position: relative;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div {
+  margin-bottom: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > p span {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #d61b00;
+  line-height: 0.4rem;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  margin-left: 0.04rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > input {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  padding-left: 0.3rem;
+  color: #333;
+  background: #ffffff;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > div .select1 {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 5.8rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > div .havetu.select1 {
+  background: url("../../../img/day.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 5.8rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > div > div {
+  width: 3.05rem;
+  height: 0.7rem;
+  background: #ffffff;
+  border: 0.01rem solid #e2e2e2;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > div > div .select2 {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 2.6rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > div > div:nth-of-type(1) {
+  float: left;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div > div > div:nth-of-type(2) {
+  float: right;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > div .select22 {
+  overflow: hidden;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > a {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 > a img {
+  width: 100%;
+  height: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object {
+  margin-bottom: 0;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(1) span:nth-of-type(1) {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(1) span:nth-of-type(2) {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #d61b00;
+  line-height: 0.4rem;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  margin-left: 0.04rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(1) a {
+  width: 0.35rem;
+  height: 0.35rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(1) a img {
+  width: 0.35rem;
+  height: 0.35rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(2) {
+  position: relative;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(2) input {
+  width: 5.8rem;
+  height: 0.7rem;
+  background: #ffffff;
+  border: 0.01rem solid #e2e2e2;
+  margin-top: 0.15rem;
+  padding-left: 0.3rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(2) a {
+  position: absolute;
+  display: block;
+  width: 0.35rem;
+  height: 0.35rem;
+  right: 0;
+  bottom: 0.17rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .school2 .object > div:nth-of-type(2) a img {
+  width: 100%;
+  height: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .more {
+  width: 6.9rem;
+  height: 0.7rem;
+  border: 0.01rem dashed #b3b3b3;
+  margin-top: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base2 > div .more a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  line-height: 0.7rem;
+  text-align: center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 {
+  margin-top: 0.52rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > span {
+  height: 0.48rem;
+  font-size: 0.34rem;
+  font-weight: 400;
+  color: #8f5497;
+  line-height: 0.48rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) {
+  margin-bottom: 0.24rem;
+  padding: 0.6rem 0.3rem;
+  width: 6.9rem;
+  background: #f8f8f8;
+  border: 0.01rem solid #e8e8e8;
+  position: relative;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div {
+  margin-bottom: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  margin-bottom: 0.15rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > p span {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #d61b00;
+  line-height: 0.4rem;
+  letter-spacing: 0.02rem;
+  vertical-align: middle;
+  margin-left: 0.04rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > input {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  padding-left: 0.3rem;
+  color: #333;
+  background: #ffffff;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div {
+  height: 0.7rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div .select1 {
+  width: 100%;
+  height: 0.7rem;
+  border: 0.01rem solid #e2e2e2;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 5.8rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div .havetu.select1 {
+  background: url("../../../img/day.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 5.8rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div > div {
+  width: 3.05rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div > div .select2 {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  padding-left: 0.3rem;
+  background: url("../../../img/down1.png") no-repeat scroll transparent;
+  background-size: 0.32rem 0.36rem;
+  background-position: 2.6rem center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div > div:nth-of-type(1) {
+  float: left;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div > div > div:nth-of-type(2) {
+  float: right;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div .select22 {
+  width: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div .select22 div {
+  background: #fff;
+  border: 0.01rem solid #e2e2e2;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) div:last-of-type {
+  margin-bottom: 0;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) a {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: block;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div > div:nth-of-type(1) a img {
+  width: 100%;
+  height: 100%;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div .more {
+  width: 6.9rem;
+  height: 0.7rem;
+  border: 0.01rem dashed #b3b3b3;
+  margin-top: 0.24rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .base3 > div .more a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #b3b3b3;
+  line-height: 0.7rem;
+  text-align: center;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(1) .newmsg {
+  width: 2.8rem;
+  height: 0.8rem;
+  background: #882f97;
+  border-radius: 0.08rem;
+  font-size: 0.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 0.8rem;
+  text-align: center;
+  margin-top: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) {
+  margin-bottom: 1.2rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) > p {
+  height: 0.48rem;
+  font-size: 0.34rem;
+  font-weight: 400;
+  color: #8f5497;
+  line-height: 0.48rem;
+  margin-bottom: 0.42rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) > div > div {
+  width: 6.9rem;
+  height: 1.11rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 0.24rem;
+  position: relative;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) > div > div > p:nth-of-type(1) {
+  height: 0.37rem;
+  font-size: 0.26rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.37rem;
+  margin-bottom: 0.12rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) > div > div > p:nth-of-type(2) {
+  height: 0.4rem;
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.4rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) > div > div > p:nth-of-type(2) span {
+  color: #4CAA32;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(2) > div > div a {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #2985dc;
+  line-height: 0.4rem;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div {
+  border-bottom: 0.01rem solid #D8D8D8;
+  margin-bottom: 0.52rem;
+  padding-bottom: 0.52rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > p {
+  height: 0.48rem;
+  font-size: 0.34rem;
+  font-weight: 400;
+  color: #8f5497;
+  line-height: 0.48rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div {
+  position: relative;
+  margin-bottom: 0.36rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div:last-of-type {
+  margin-bottom: 0;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(1) {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.4rem;
+  width: 5rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(1) > p {
+  margin-bottom: 0.1rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(1) > div p {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.4rem;
+  margin-bottom: 0;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(2) span {
+  font-size: 0.28rem;
+  font-weight: 400;
+  line-height: 0.4rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(2) > div {
+  float: right;
+  margin-left: 0.15rem;
+  width: 0.76rem;
+  height: 0.4rem;
+  border-radius: 0.31rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div > div:nth-of-type(2) > div div {
+  width: 0.35rem;
+  height: 0.35rem;
+  background: #ffffff;
+  box-shadow: 0.02rem 0.04rem 0.04rem 0px rgba(0, 0, 0, 0.1), 0px 0.04rem 0.23rem 0px rgba(0, 0, 0, 0.08), 0px 0px 0.04rem 0px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin-top: 0.01rem;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div .nochoose > div {
+  background: #c8c8c8;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div .nochoose > div div {
+  float: left;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div .nochoose span {
+  color: #999999;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div .choose > div {
+  background: #882f97;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div .choose > div div {
+  float: right;
+}
+.finance_content > div:nth-of-type(2) .choose2 > li:nth-of-type(3) > div > div .choose span {
+  color: #882F97;
+}
+.finance_content > div:nth-of-type(2) .choose2 .choose {
+  display: block;
+}
+/*# sourceMappingURL=safe1.css.map */
